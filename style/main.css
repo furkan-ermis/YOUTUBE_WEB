@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  padding-top: 111px;
+  padding-left: 70px;
+}
+.icon {
+  width: 24px;
+  position: relative;
+}

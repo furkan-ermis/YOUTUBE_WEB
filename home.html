@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube.com Clone</title>
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/sidebar.css" />
+    <link rel="stylesheet" href="style/article.css" />
+    <script
+      src="https://kit.fontawesome.com/6ab4b1a255.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <section class="left_section">
+        <img class="icon" src="style/icons/hamburger-menu.svg">
+        <div class="youtube_icon icon">
+          <img src="style/icons/youtube-logo.svg" alt="" title="Youtube Ana Sayfası"/><span>TR</span>
+        </div>
+      </section>
+      <section class="middle_section">
+        <form action="#">
+          <input
+            type="search"
+            class="search_bar"
+            name="seach"
+            id="search"
+            placeholder="Ara"
+          />
+          <button class="search_button">
+            <img class="icon" title="Ara" src="style/icons/search.svg">
+          </button>
+          <button class="voice_button">
+            <img class="icon" title="Sesle Arama Yapın" src="style/icons/voice-search-icon.svg">
+
+          </button>
+        </form>
+      </section>
+      <section class="right_section">
+        <ul>
+          <li>
+            <a href="#"><img class="icon" src="style/icons/upload.svg" title="Oluştur" alt="" /></a>
+          </li>
+          <li>
+            <a class="notifications" href="#"
+              ><img
+                class="icon"
+                src="style/icons/notifications.svg"
+                alt=""
+                title="Bildirimler"
+              /><span>4</span></a
+            >
+          </li>
+          <li><a class="profile_photo" href="#">F</a></li>
+        </ul>
+      </section>
+    </header>
+    <div class="container_shortlist">
+      <div class="shortlist">
+        <button class="active button" title="Tümü">Tümü
+        </button>
+        <button class="inactive button" title="Müzik">Müzik</button>
+        <button class="inactive button" title="Oyun">Oyun</button>
+        <button class="inactive button" title="Canlı">Canlı</button>
+        <button class="inactive button" title="Mix'ler">Mix'ler</button>
+        <button class="inactive button" title="Komedi skeç gösterileri">Komedi skeç gösterileri</button>
+        <button class="inactive button" title="Aksiyon-macera oyunları">Aksiyon-macera oyunları</button>
+        <button class="inactive button" title="Son yüklenenler">Son yüklenenler</button>
+        <button class="inactive button" title="İzlenenler">İzlenenler</button>
+        <button class="inactive button" title="Yeni öneriler">Yeni öneriler</button>
+      </div>
+    </div>
+    <nav class="sidebar">
+      <ul>
+        <li title="Ana Sayfa">
+          <img
+            class="icon" src="style/icons/home.svg">
+          <p>Ana Sayfa</p>
+          
+        </li>
+        <li title="Shorts">
+          <img
+            class="icon"
+            src="style/icons/shorts.svg"
+            alt=""
+            style="height:18px"
+          />
+          <p>Shorts</p>
+          
+
+        </li>
+        <li title="Abonelikler">
+          <img
+            src="style/icons/subscriptions.svg"
+            alt=""
+            class="icon"
+          />
+          <p >Abonelikler</p>
+          
+
+        </li>
+        <li title="Kitaplık">
+          <img
+            style="width: 20px; height: 44px"
+            src="style/icons/library.svg"
+            alt=""
+            class="icon"
+          />
+          <p >Kitaplık</p>
+
+        </li>
+      </ul>
+    </nav> 
+    <article class="wrapper"> 
+      <div class="container">
+        <div class="video_box">
+          <img class="thumbnail" data-visible src="style/photos/thumbnail1.webp" alt="" />
+          <p class="time">14:23</p>
+          <p class="preview_info">Oynatmak için fareyi üzerinde tutun</p>
+          <div class="box_content">
+            <div class="profile_logo">
+              <img
+                class="profile_picture"
+                src="style/photos/profil_pic1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="box_text">
+              <p class="title">İstanbulun en iyi kitapçıları</p>
+              <p class="channel_name">Booker</p>
+              <p class="view_date">17 Mn görüntülenme &#183 10 gün önce</p>
+            </div>
+            <div class="ellipse_vertical_icon"><img class="icon" src="style/icons/ellipsis-vertical-svgrepo-com.svg" alt=""></div>
+          </div>
+        </div>
+        <div class="video_box">
+          <img class="thumbnail" src="style/photos/thumbnail2.webp" alt="" /><p class="time">09:53</p><p class="preview_info">Oynatmak için fareyi üzerinde tutun</p>
+          <div class="box_content">
+            <div class="profile_logo">
+              <img
+                class="profile_picture"
+                src="style/photos/profil_pic2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="box_text">
+              <p class="title">En Etkili Antreman Programı - FullBody</p>
+              <p class="channel_name">YeaaBoddy</p>
+              <p class="view_date">6 Mn görüntülenme &#183 1 hafta önce</p>
+            </div>
+            <div class="ellipse_vertical_icon"><img class="icon" src="style/icons/ellipsis-vertical-svgrepo-com.svg" alt=""></div>
+
+          </div>
+        </div>
+        <div class="video_box">
+          <img class="thumbnail" src="style/photos/thumbnail3.webp" alt="" /><p class="time">18:13</p><p class="preview_info">Oynatmak için fareyi üzerinde tutun</p>
+          <div class="box_content">
+            <div class="profile_logo">
+              <img
+                class="profile_picture"
+                src="style/photos/profil_pic3.jpg"
+                alt=""
+              />
+            </div>
+            <div class="box_text">
+              <p class="title">Düzenli Çalışmak Verimi Arttırıyor - Kanıtlandı!!</p>
+              <p class="channel_name">WorkWithMe</p>
+              <p class="view_date">3 Mn görüntülenme &#183 2 ay önce</p>
+            </div>
+            <div class="ellipse_vertical_icon"><img class="icon" src="style/icons/ellipsis-vertical-svgrepo-com.svg" alt=""></div>
+          </div>
+        </div>
+        <div class="video_box">
+          <img class="thumbnail" src="style/photos/thumbnail4.webp" alt="" /><p class="time">21:55</p><p class="preview_info">Oynatmak için fareyi üzerinde tutun</p>
+          <div class="box_content">
+            <div class="profile_logo">
+              <img
+                class="profile_picture"
+                src="style/photos/profil_pic4.jpg"
+                alt=""
+              />
+            </div>
+            <div class="box_text">
+              <p class="title">En Uygun Fiyatlarla Yurtdışı Tatili</p>
+              <p class="channel_name">Vacation Vlog</p>
+              <p class="view_date">252 B görüntülenme &#183 2 gün önce</p>
+            </div>
+            <div class="ellipse_vertical_icon"><img class="icon" src="style/icons/ellipsis-vertical-svgrepo-com.svg" alt=""></div>
+
+          </div>
+        </div>
+        <div class="video_box">
+          <img class="thumbnail" src="style/photos/thumbnail5.webp" alt="" /><p class="time">01:19:23</p><p class="preview_info">Oynatmak için fareyi üzerinde tutun</p>
+          <div class="box_content">
+            <div class="profile_logo">
+              <img
+                class="profile_picture"
+                src="style/photos/profil_pic5.jpg"
+                alt=""
+              />
+            </div>
+            <div class="box_text">
+              <p class="title">Eski Dosyalama Sistemleri - Geçmişten Günümüze#3</p>
+              <p class="channel_name">TarihinTozluSayfaları</p>
+              <p class="view_date">7 Mn görüntülenme &#183 4 ay önce</p>
+            </div>
+            <div class="ellipse_vertical_icon"><img class="icon" src="style/icons/ellipsis-vertical-svgrepo-com.svg" alt=""></div>
+
+          </div>
+        </div>
+        <div class="video_box">
+          <img class="thumbnail" src="style/photos/thumbnail6.webp" alt="" /><p class="time">04:19:25</p><p class="preview_info">Oynatmak için fareyi üzerinde tutun</p>
+          <div class="box_content">
+            <div class="profile_logo">
+              <img
+                class="profile_picture"
+                src="style/photos/profil_pic6.jpg"
+                alt=""
+              />
+            </div>
+            <div class="box_text">
+              <p class="title">Fotoğraf albümlerine geri dönüş</p>
+              <p class="channel_name">Fotolog</p>
+              <p class="view_date">722 B görüntülenme &#183 1 yıl önce</p>
+            </div>
+            <div class="ellipse_vertical_icon"><img class="icon" src="style/icons/ellipsis-vertical-svgrepo-com.svg" alt=""></div>
+
+          </div>
+        </div>
+        <div class="video_box">
+          <img class="thumbnail" src="style/photos/thumbnail7.webp" alt="" /><p class="time">10:23</p><p class="preview_info">Oynatmak için fareyi üzerinde tutun</p>
+          <div class="box_content">
+            <div class="profile_logo">
+              <img
+                class="profile_picture"
+                src="style/photos/profil_pic7.jpg"
+                alt=""
+              />
+            </div>
+            <div class="box_text">
+              <p class="title">Bir Kara delik Keşfi Daha Yapıldı..</p>
+              <p class="channel_name">Astro-MAN</p>
+              <p class="view_date">122 B görüntülenme &#183 3 hafta önce</p>
+            </div>
+            <div class="ellipse_vertical_icon"><img class="icon" src="style/icons/ellipsis-vertical-svgrepo-com.svg" alt=""></div>
+
+          </div>
+        </div>
+        <div class="video_box">
+          <img class="thumbnail" src="style/photos/thumbnail8.webp" alt="" /><p class="time">11:57</p><p class="preview_info">Oynatmak için fareyi üzerinde tutun</p>
+          <div class="box_content">
+            <div class="profile_logo">
+              <img
+                class="profile_picture"
+                src="style/photos/profil_pic8.jpg"
+                alt=""
+              />
+            </div>
+            <div class="box_text">
+              <p class="title">Youtube Neyin Peşinde..</p>
+              <p class="channel_name">Komple teori</p>
+              <p class="view_date">1 Mn görüntülenme &#183 1 ay önce</p>
+            </div>
+            <div class="ellipse_vertical_icon"><img class="icon" src="style/icons/ellipsis-vertical-svgrepo-com.svg" alt=""></div>
+
+          </div>
+        </div>
+        <div class="video_box">
+          <img class="thumbnail" src="style/photos/thumbnail9.webp" alt="" /><p class="time">43:12</p><p class="preview_info">Oynatmak için fareyi üzerinde tutun</p>
+          <div class="box_content">
+            <div class="profile_logo">
+              <img
+                class="profile_picture"
+                src="style/photos/profil_pic9.jpg"
+                alt=""
+              />
+            </div>
+            <div class="box_text">
+              <p class="title">Maymunlar İnsanlardan daha insan</p>
+              <p class="channel_name">Doğal Yaşamlar</p>
+              <p class="view_date">11 Mn görüntülenme &#183 3 yıl önce</p>
+            </div>
+            <div class="ellipse_vertical_icon"><img class="icon" src="style/icons/ellipsis-vertical-svgrepo-com.svg" alt=""></div>
+
+          </div>
+        </div>
+        <div class="video_box">
+          <img class="thumbnail" src="style/photos/thumbnail10.webp" alt="" /><p class="time">05:47:10</p><p class="preview_info">Oynatmak için fareyi üzerinde tutun</p>
+          <div class="box_content">
+            <div class="profile_logo">
+              <img
+                class="profile_picture"
+                src="style/photos/profil_pic10.jpg"
+                alt=""
+              />
+            </div>
+            <div class="box_text">
+              <p class="title">Mimaride Son nokta - Dünyaya Yeni Bir Harika daha!</p>
+              <p class="channel_name">Keşf-et</p>
+              <p class="view_date">4 Mn görüntülenme &#183 15 gün önce</p>
+            </div>
+            <div class="ellipse_vertical_icon"><img class="icon" src="style/icons/ellipsis-vertical-svgrepo-com.svg" alt=""></div>
+
+          </div>
+        </div>
+        <div class="video_box">
+          <img class="thumbnail" src="style/photos/thumbnail11.webp" alt="" /><p class="time">12:59</p><p class="preview_info">Oynatmak için fareyi üzerinde tutun</p>
+          <div class="box_content">
+            <div class="profile_logo">
+              <img
+                class="profile_picture"
+                src="style/photos/profil_pic11.jpg"
+                alt=""
+              />
+            </div>
+            <div class="box_text">
+              <p class="title">Dünyaya Sığamıyoruz - Yeni Bir Dünya</p>
+              <p class="channel_name">Her şeyin Teorisi</p>
+              <p class="view_date">6 Mn görüntülenme &#183 4 gün önce</p>
+            </div>
+            <div class="ellipse_vertical_icon"><img class="icon" src="style/icons/ellipsis-vertical-svgrepo-com.svg" alt=""></div>
+
+          </div>
+        </div>
+        <div class="video_box">
+          <img class="thumbnail" src="style/photos/thumbnail12.webp" alt="" /><p class="time">03:11:06</p><p class="preview_info">Oynatmak için fareyi üzerinde tutun</p>
+          <div class="box_content">
+            <div class="profile_logo">
+              <img
+                class="profile_picture"
+                src="style/photos/profil_pic12.jpg"
+                alt=""
+              />
+            </div>
+            <div class="box_text">
+              <p class="title">Ampulün Büyük Sırrı</p>
+              <p class="channel_name">BuNeya</p>
+              <p class="view_date">2 Mn görüntülenme &#183 6 ay önce</p>
+            </div>
+            <div class="ellipse_vertical_icon"><img class="icon" src="style/icons/ellipsis-vertical-svgrepo-com.svg" alt=""></div>
+
+          </div>
+        </div>
+        <div class="video_box">
+          <img class="thumbnail" src="style/photos/thumbnail13.webp" alt="" /><p class="time">44:46</p><p class="preview_info">Oynatmak için fareyi üzerinde tutun</p>
+          <div class="box_content">
+            <div class="profile_logo">
+              <img
+                class="profile_picture"
+                src="style/photos/profil_pic13.jpg"
+                alt=""
+              />
+            </div>
+            <div class="box_text">
+              <p class="title">Kızlar Neden Pembe?</p>
+              <p class="channel_name">Gizemin Dünyası</p>
+              <p class="view_date">114 Mn görüntülenme &#183 24 gün önce</p>
+            </div>
+            <div class="ellipse_vertical_icon"><img class="icon" src="style/icons/ellipsis-vertical-svgrepo-com.svg" alt=""></div>
+
+          </div>
+        </div>
+        <div class="video_box">
+          <img class="thumbnail" src="style/photos/thumbnail14.webp" alt="" /><p class="time">37:24</p><p class="preview_info">Oynatmak için fareyi üzerinde tutun</p>
+          <div class="box_content">
+            <div class="profile_logo">
+              <img
+                class="profile_picture"
+                src="style/photos/profil_pic14.jpg"
+                alt=""
+              />
+            </div>
+            <div class="box_text">
+              <p class="title">Bu Filmin Nasıl Çekildiğine İnanmıyacaksınız..</p>
+              <p class="channel_name">Film Yolunda</p>
+              <p class="view_date">12 Mn görüntülenme &#183 7 ay önce</p>
+            </div>
+            <div class="ellipse_vertical_icon"><img class="icon" src="style/icons/ellipsis-vertical-svgrepo-com.svg" alt=""></div>
+
+          </div>
+        </div>
+        <div class="video_box">
+          <img class="thumbnail" src="style/photos/thumbnail15.webp" alt="" /><p class="time">11:33</p><p class="preview_info">Oynatmak için fareyi üzerinde tutun</p>
+          <div class="box_content">
+            <div class="profile_logo">
+              <img
+                class="profile_picture"
+                src="style/photos/profil_pic15.jpg"
+                alt=""
+              />
+            </div>
+            <div class="box_text">
+              <p class="title">Evden Çalışmanın Zorlukları</p>
+              <p class="channel_name">Creatifiz</p>
+              <p class="view_date">7 Mn görüntülenme &#183 2 yıl önce</p>
+            </div>
+            <div class="ellipse_vertical_icon"><img class="icon" src="style/icons/ellipsis-vertical-svgrepo-com.svg" alt=""></div>
+
+          </div>
+        </div>
+        
+      </div>
+    </article>
+  </body>
+</html>

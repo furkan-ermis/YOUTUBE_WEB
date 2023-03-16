@@ -1,0 +1,239 @@
+header.header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+/* -----left_section------ */
+.left_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  margin-right: 9px;
+}
+.left_section > img {
+  margin: 8px 0;
+  cursor: pointer;
+  width: 40px;
+  padding: 8px;
+  margin-top: 6px;
+  border-radius: 20px;
+}
+.left_section > img:hover {
+  background-color: rgba(216, 217, 219, 0.377);
+}
+.youtube_icon {
+  width: 120px;
+  cursor: pointer;
+  padding: 19px 14px 18px 16px;
+  position: relative;
+}
+.youtube_icon:hover .tip {
+  opacity: 100%;
+}
+.youtube_icon span {
+  position: absolute;
+  top: 13px;
+  right: -2px;
+  color: rgb(77, 76, 76);
+  font-size: 10px;
+}
+
+/* -----middle section----- */
+.middle_section {
+  display: flex;
+  align-items: center;
+  width: 728px;
+  height: 40px;
+}
+.middle_section form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 32px;
+}
+
+input.search_bar {
+  width: 541px;
+  height: 40px;
+  outline: none;
+  padding: 0px 4px 0px 16px;
+  margin-left: 40px;
+  border-radius: 20px 0 0 20px;
+  border: solid 1px rgba(168, 167, 167, 0.473);
+  box-shadow: inset 1px 2px 1px rgba(0, 0, 0, 0.05);
+}
+input.search_bar::placeholder {
+  font-size: 16px;
+  padding: 1px 1px;
+  color: rgb(141, 138, 138);
+}
+form button.search_button {
+  position: relative;
+  cursor: pointer;
+  padding-inline: 12px;
+  box-shadow: inset 1px 1px 0.5px rgba(226, 223, 223, 0.02);
+  border-left: none;
+  left: -1px;
+  border: solid 1px rgba(151, 150, 150, 0.397);
+  border-radius: 0 22vh 22vh 0;
+  background-color: rgba(245, 245, 248, 0.863);
+}
+form button.search_button:hover {
+  background-color: rgba(222, 223, 224, 0.432);
+}
+form button.search_button:hover .tip {
+  left: 20px;
+  opacity: 100%;
+}
+form button.search_button img {
+  margin: 6px 0;
+  margin-inline: 8px 7px;
+  margin-bottom: 5px;
+}
+.voice_button {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6px;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(245, 245, 248, 0.863);
+}
+.voice_button:hover {
+  background-color: rgba(216, 217, 219, 0.377);
+}
+.voice_button:hover .tip {
+  left: 20px;
+  opacity: 100%;
+}
+/* ------right_section------ */
+.right_section {
+  width: 225px;
+  margin-left: 20px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 8px;
+}
+.right_section ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.right_section ul li {
+  padding-left: 11px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+.right_section ul li:first-child {
+  margin-right: -10px;
+}
+.right_section ul li:first-child:hover .tip {
+  left: 20px;
+  opacity: 100%;
+}
+.right_section ul li img {
+  position: inherit;
+  right: 4px;
+}
+.right_section ul li:hover {
+  background-color: rgba(222, 223, 224, 0.432);
+}
+a.notifications img {
+  position: relative;
+}
+a.notifications:hover .tip {
+  opacity: 100%;
+  left: 20px;
+}
+.right_section ul a span {
+  color: white;
+  position: absolute;
+  display: inline-block;
+  background-color: rgb(189, 28, 28);
+  width: 13px;
+  right: 0;
+  font-size: 11px;
+  padding-left: 3px;
+  height: 13px;
+  border-radius: 8px;
+}
+.profile_photo {
+  background-color: rgb(98, 118, 148);
+  color: white;
+  position: inherit;
+  right: 8px;
+  padding: 7px 12px;
+  border-radius: 32px;
+}
+.container_shortlist {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 60px;
+  height: 51px;
+  background-color: white;
+}
+.shortlist {
+  display: flex;
+  position: fixed;
+  top: 60px;
+  left: 70px;
+  z-index: 1;
+  padding: 10px 26px;
+  min-width: 58%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.shortlist .button {
+  cursor: pointer;
+  padding: 7px 11px;
+  border: none;
+  position: relative;
+  font-size: 14px;
+  border-radius: 8px;
+  white-space: nowrap;
+
+  color: rgb(90, 89, 89);
+  background-color: rgba(224, 225, 228, 0.274);
+}
+.shortlist .active:hover .tip {
+  left: 50px;
+  top: 40px;
+  opacity: 100%;
+}
+.shortlist .inactive:hover .tip {
+  left: 50px;
+  top: 40px;
+  opacity: 100%;
+}
+
+.shortlist .inactive.button:hover {
+  background-color: rgba(222, 223, 224, 0.432);
+}
+.shortlist .active {
+  color: white;
+  background-color: black;
+}

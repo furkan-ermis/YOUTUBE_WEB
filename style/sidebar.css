@@ -1,0 +1,48 @@
+nav.sidebar {
+  position: fixed;
+  z-index: 1;
+  top: 58px;
+  left: 0;
+  bottom: 0;
+  width: 70px;
+  background-color: #fff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+}
+
+nav.sidebar ul li {
+  display: flex;
+  width: 64px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 16px;
+  padding-bottom: 14px;
+  cursor: pointer;
+  border-radius: 14px;
+  position: relative;
+  transition: opacity 1s;
+}
+nav.sidebar ul li:hover {
+  background-color: rgba(216, 217, 219, 0.377);
+}
+nav.sidebar ul li:hover .tip {
+  opacity: 100%;
+  transition: opacity 1s;
+  left: 20px;
+}
+nav.sidebar ul li img {
+  margin-bottom: 6px;
+}
+nav.sidebar ul li p {
+  font-size: 14;
+}
