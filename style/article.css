@@ -1,5 +1,5 @@
 article.wrapper {
-  width: 100vw;
+  max-width: 100vw;
   padding: 0;
   margin: 0;
   position: relative;
@@ -9,8 +9,8 @@ article .container {
   max-width: 96%;
   display: grid;
   justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 14px;
   padding: 20px;
   padding-top: 28px;
   padding-left: 26px;
@@ -91,8 +91,8 @@ article .container {
 .box_content .profile_logo {
   width: 40px;
   height: 40px;
-overflow-y: hidden;
-margin-left: 5px;
+  overflow-y: hidden;
+  margin-left: 5px;
 }
 .container .video_box img.profile_picture {
   width: 100%;
